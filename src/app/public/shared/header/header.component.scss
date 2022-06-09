@@ -1,0 +1,16 @@
+nav > ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+li {
+  flex: auto;
+  font-size: 1.2em;
+  background-color: #143954;
+  font-weight: 200;
+  margin: 0;
+}
+a {
+  color: #FFFFFF;
+}
