@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+
+.my-body {
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.my-body > * {
+  margin: 1% auto 1% auto;
+}
