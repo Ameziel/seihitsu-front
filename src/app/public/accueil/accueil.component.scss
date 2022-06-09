@@ -1,0 +1,9 @@
+body {
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+body > * {
+    margin: 2% auto 2% auto;
+}
