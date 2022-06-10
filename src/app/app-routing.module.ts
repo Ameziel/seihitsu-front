@@ -5,6 +5,7 @@ import {ContactComponent} from "./public/contact/contact.component";
 import {ReservationComponent} from "./public/reservation/reservation.component";
 import {RestaurantComponent} from "./public/restaurant/restaurant.component";
 import {ChambreComponent} from "./public/chambre/chambre.component";
+import {LoginComponent} from "./public/login/login.component";
 
 const routes: Routes = [
   {path: '', component: AccueilComponent}, //TODO better way with the second line ? an OR ?
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path: 'Contact', component: ContactComponent},
   {path: 'Reservation', component: ReservationComponent},
   {path: 'Restaurant', component: RestaurantComponent},
+  {path: 'Login', component: LoginComponent}
 ];
 
 @NgModule({

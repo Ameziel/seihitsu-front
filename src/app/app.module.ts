@@ -21,6 +21,7 @@ import { ClientDetailsComponent } from './private/client/client-details/client-d
 import { PersonnelManagementComponent } from './private/administration/personnel-management/personnel-management.component';
 import { PersonnelAjoutComponent } from './private/administration/personnel-ajout/personnel-ajout.component';
 import { PersonnelDetailsComponent } from './private/administration/personnel-details/personnel-details.component';
+import { LoginComponent } from './public/login/login.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { PersonnelDetailsComponent } from './private/administration/personnel-de
     ClientDetailsComponent,
     PersonnelManagementComponent,
     PersonnelAjoutComponent,
-    PersonnelDetailsComponent
+    PersonnelDetailsComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
