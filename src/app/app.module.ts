@@ -22,6 +22,7 @@ import { PersonnelManagementComponent } from './private/administration/personnel
 import { PersonnelAjoutComponent } from './private/administration/personnel-ajout/personnel-ajout.component';
 import { PersonnelDetailsComponent } from './private/administration/personnel-details/personnel-details.component';
 import { LoginComponent } from './public/login/login.component';
+import { NavigationComponent } from './private/shared/navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { LoginComponent } from './public/login/login.component';
     PersonnelManagementComponent,
     PersonnelAjoutComponent,
     PersonnelDetailsComponent,
-    LoginComponent
+    LoginComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
