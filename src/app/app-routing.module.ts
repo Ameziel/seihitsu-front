@@ -16,19 +16,19 @@ import {
 } from "./private/administration/personnel-management/personnel-management.component";
 
 const routes: Routes = [
-  {path: '', component: AccueilComponent}, //TODO better way with the second line ? an OR ?
+  {path: '*', component: AccueilComponent}, //TODO better way with the second line ? an OR ?
   {path: 'Accueil', component: AccueilComponent},
   {path: 'Chambre', component: ChambreComponent},
   {path: 'Contact', component: ContactComponent},
   {path: 'Reservation', component: ReservationComponent},
   {path: 'Restaurant', component: RestaurantComponent},
   {path: 'Login', component: LoginComponent},
-  {path: '/interne/dashboard', component: DashboardComponent},
-  {path: '/interne/chambre', component: ChambreComponent},
-  {path: '/interne/sejour', component: SejourComponent},
-  {path: '/interne/rapport', component: RapportComponent},
-  {path: '/interne/client', component: ClientManagementComponent},
-  {path: '/interne/administration', component: PersonnelManagementComponent},
+  {path: 'interne/dashboard', component: DashboardComponent},
+  {path: 'interne/chambre', component: ChambreComponent},
+  {path: 'interne/sejour', component: SejourComponent},
+  {path: 'interne/rapport', component: RapportComponent},
+  {path: 'interne/client', component: ClientManagementComponent},
+  {path: 'interne/administration', component: PersonnelManagementComponent},
 ];
 
 @NgModule({
