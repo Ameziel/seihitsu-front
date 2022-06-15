@@ -14,6 +14,7 @@ import {ClientManagementComponent} from "./private/client/client-management/clie
 import {
   PersonnelManagementComponent
 } from "./private/administration/personnel-management/personnel-management.component";
+import {DashboardChambreComponent} from "./private/chambre/dashboard-chambre/dashboard-chambre.component";
 
 const routes: Routes = [
   {path: '*', component: AccueilComponent}, //TODO better way with the second line ? an OR ?
@@ -24,11 +25,11 @@ const routes: Routes = [
   {path: 'Restaurant', component: RestaurantComponent},
   {path: 'Login', component: LoginComponent},
   {path: 'interne/dashboard', component: DashboardComponent},
-  {path: 'interne/chambre', component: ChambreComponent},
-  {path: 'interne/sejour', component: SejourComponent},
-  {path: 'interne/rapport', component: RapportComponent},
-  {path: 'interne/client', component: ClientManagementComponent},
-  {path: 'interne/administration', component: PersonnelManagementComponent},
+  {path: 'interne/dashboard/chambre', component: DashboardChambreComponent},
+  {path: 'interne/dashboard/sejour', component: SejourComponent},
+  {path: 'interne/dashboard/rapport', component: RapportComponent},
+  {path: 'interne/dashboard/client', component: ClientManagementComponent},
+  {path: 'interne/dashboard/administration', component: PersonnelManagementComponent},
 ];
 
 @NgModule({
