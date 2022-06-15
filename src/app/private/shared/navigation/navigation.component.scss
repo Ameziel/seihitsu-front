@@ -1,0 +1,24 @@
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: #282d32;
+}
+li {
+  padding: 10%;
+}
+li a {
+  color: snow;
+  font-weight: 300;
+}
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
