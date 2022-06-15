@@ -23,6 +23,10 @@ import { PersonnelAjoutComponent } from './private/administration/personnel-ajou
 import { PersonnelDetailsComponent } from './private/administration/personnel-details/personnel-details.component';
 import { LoginComponent } from './public/login/login.component';
 import { NavigationComponent } from './private/shared/navigation/navigation.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatTableModule} from "@angular/material/table";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -50,7 +54,11 @@ import { NavigationComponent } from './private/shared/navigation/navigation.comp
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatTableModule,
+    MatFormFieldModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
