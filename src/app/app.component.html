@@ -1,4 +1,12 @@
 <div class="main-container">
   <app-header></app-header>
+  <div class="flex-container">
+    <div *ngIf="!isSideNavigationVisible()" class="sidebar">
+      <app-navigation></app-navigation>
+    </div>
+    <div class="display-side">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
   <app-footer></app-footer>
 </div>
