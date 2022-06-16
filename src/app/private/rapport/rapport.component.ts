@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./rapport.component.scss']
 })
 export class RapportComponent implements OnInit {
-
+  pageTitle = "Rapport d'activité";
   constructor() { }
 
   ngOnInit(): void {
