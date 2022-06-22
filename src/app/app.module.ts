@@ -27,6 +27,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTableModule} from "@angular/material/table";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {HttpClientModule} from "@angular/common/http";
+import {EmployeService} from "./private/services/employe.service";
 
 @NgModule({
   declarations: [
@@ -60,7 +61,7 @@ import {HttpClientModule} from "@angular/common/http";
     MatFormFieldModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [EmployeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

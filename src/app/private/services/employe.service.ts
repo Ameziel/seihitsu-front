@@ -10,7 +10,6 @@ export class EmployeService {
 
   private serviceUrl = "http://localhost:8080/api/employe/all";
 
-
   constructor(private httpClient: HttpClient) { }
 
   getEmployes(): Observable<Employe[]> {
