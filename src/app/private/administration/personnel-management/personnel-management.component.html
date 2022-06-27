@@ -1,1 +1,36 @@
-<button (click)="getEmployes()">btn_test_getEmploye</button>
+<h1>{{title}}</h1>
+<div class="table-container">
+<table mat-table [dataSource]="employes" class="mat-elevation-z8">
+
+  <ng-container matColumnDef="idEmploye">
+    <th mat-header-cell *matHeaderCellDef> idEmploye </th>
+    <td mat-cell *matCellDef="let element"> {{element.idEmploye}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="Nom">
+    <th mat-header-cell *matHeaderCellDef> Nom </th>
+    <td mat-cell *matCellDef="let element"> {{element.nom}} </td>
+  </ng-container>
+
+
+  <ng-container matColumnDef="Prenom">
+    <th mat-header-cell *matHeaderCellDef> Prenom </th>
+    <td mat-cell *matCellDef="let element"> {{element.prenom}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="libellePoste">
+    <th mat-header-cell *matHeaderCellDef> libellePoste </th>
+    <td mat-cell *matCellDef="let element"> {{element.libellePoste}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+</div>
+
+<button>Afficher tout</button>
+<button>Ajouter</button>
+<button>Afficher détail</button>
+<button>Supprimer</button>
+
+

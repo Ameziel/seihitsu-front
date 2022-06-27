@@ -1,11 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Employe} from "../../../models/employe";
-import {MatTableDataSource} from "@angular/material/table";
-import {HttpClient} from "@angular/common/http";
 import {EmployeService} from "../../services/employe.service";
-import {Observable, Subscription} from "rxjs";
-
-
 
 
 @Component({
@@ -14,16 +9,15 @@ import {Observable, Subscription} from "rxjs";
   styleUrls: ['./personnel-management.component.scss']
 })
 export class PersonnelManagementComponent implements OnInit {
-
+  title = "Admistration Personnel";
   employes: Employe[] = [];
+  displayedColumns : string[] = ["idEmploye","Nom","Prenom", "libellePoste"];  // TODO make it generic
 
-  constructor(private employeService: EmployeService
-  ) {  }
+  constructor(private employeService: EmployeService) {  }
 
   ngOnInit(): void {
     this.employeService.getEmployes().subscribe( res => {
           this.employes = res
-          console.log(res);
       }
     );
   }
@@ -34,7 +28,4 @@ export class PersonnelManagementComponent implements OnInit {
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 
-  getEmployes() {
-    console.log(this.employes);
-  }
 }
