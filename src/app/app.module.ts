@@ -28,6 +28,8 @@ import {MatTableModule} from "@angular/material/table";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {HttpClientModule} from "@angular/common/http";
 import {EmployeService} from "./private/services/employe.service";
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatInputModule} from "@angular/material/input";
 
 @NgModule({
   declarations: [
@@ -53,14 +55,17 @@ import {EmployeService} from "./private/services/employe.service";
     LoginComponent,
     NavigationComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatTableModule,
-    MatFormFieldModule,
-    HttpClientModule,
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatTableModule,
+        MatFormFieldModule,
+        HttpClientModule,
+        MatPaginatorModule,
+      MatFormFieldModule,
+      MatInputModule
+    ],
   providers: [EmployeService],
   bootstrap: [AppComponent]
 })

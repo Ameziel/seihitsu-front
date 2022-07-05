@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-accueil',
@@ -20,7 +20,8 @@ export class AccueilComponent implements OnInit {
     "  nibh est. Nulla imperdiet erat in magna sollicitudin, posuere vestibulum purus\n" +
     "  commodo.";
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
